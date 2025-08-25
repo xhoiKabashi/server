@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Modern JS target
+    "module": "CommonJS", // Required for Node.js compatibility
+    "lib": ["ES2020"], // Use modern JS libraries
+    "outDir": "./dist", // Output compiled JS here
+    "rootDir": "./src", // Your source files live here
+    "strict": true, // Enable all strict type-checking options
+    "esModuleInterop": true, // Allow default imports from CommonJS
+    "forceConsistentCasingInFileNames": true, // Avoid case-related bugs across platforms
+    "moduleResolution": "node", // Use Node module resolution
+    "skipLibCheck": true, // Skip type checking of declaration files for faster builds
+    "resolveJsonModule": true, // Allow importing `.json` files
+    "types": ["node"] // Include Node.js and Express types
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
